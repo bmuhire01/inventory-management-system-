@@ -1,3 +1,7 @@
+<?php
+include("header.html");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,3 +39,5 @@ if (isset($_POST['register'])) {
         die("failed to insert");
     }
 }
+include("header_bottom.html");
+?>

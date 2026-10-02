@@ -1,4 +1,5 @@
 <?php
+include("header.html");
 include_once("connect.php");
 $id = $_GET['up_id'];
 $sql = "select * from products where id=$id";

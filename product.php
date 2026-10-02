@@ -1,3 +1,6 @@
+<?php
+include("header.html");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +12,7 @@
 </head>
 
 <body>
+    <button>Add product</button>
     <table border="1">
         <tr>
             <form action="#" method="GET">
@@ -23,6 +27,7 @@
         </tr>
         <?php
         include_once("connect.php");
+
         if (isset($_GET['search']) && $_GET['search'] != '') {
             $search = $_GET['search'];
             $sql = "SELECT * FROM products where name like'%$search%'";
@@ -53,7 +58,7 @@
 </html>
 <?php
 
-
+include("header_bottom.html");
 
 
 
